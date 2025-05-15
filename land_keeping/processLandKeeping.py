@@ -3,6 +3,7 @@ if __name__ == "__main__":
     sys.path.insert(0, "../../..")
 from src.templates.workerprocess import WorkerProcess
 from src.land_keeping.thread.threadLandKeeping import ThreadLandKeeping 
+from multiprocessing import Pipe
 
 class processLandKeeping(WorkerProcess):
     """This process handles land keeping (lane detection and steering control)."""
