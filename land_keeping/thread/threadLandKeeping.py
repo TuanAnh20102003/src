@@ -7,8 +7,8 @@ import base64
 from collections import deque
 from src.templates.threadwithstop import ThreadWithStop  # Import lớp ThreadWithStop
 from src.utils.messages.allMessages import(
-    SteeringAngleFromLandKeeping
-    serialCamera
+    SteeringAngleFromLandKeeping,
+    serialCamera,
 )
 from src.utils.messages.messageHandlerSender import messageHandlerSender
 from src.utils.messages.messageHandlerSubscriber import messageHandlerSubscriber
