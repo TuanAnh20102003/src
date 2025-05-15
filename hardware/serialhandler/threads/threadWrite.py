@@ -43,7 +43,7 @@ from src.utils.messages.allMessages import (
     ToggleInstant,
     ToggleResourceMonitor,
     SteeringAngleFromLandKeeping,
-    SpeedMotorFromObjectDetection
+    SpeedMotorFromObjectDetection,
 )
 from src.utils.messages.messageHandlerSubscriber import messageHandlerSubscriber
 from src.utils.messages.messageHandlerSender import messageHandlerSender
