@@ -248,13 +248,13 @@ class WarningSignal(Enum):
 ### It will have this format: {"WarningName":"name1", "WarningID": 1}
 
 ######################    From processLandKeeping  ###########################
-class SteeringAngleFromLandKeeping(enum):
+class SteeringAngleFromLandKeeping(Enum):
     Queue = "Critical"
     Owner = "threadLandKeeping"
     msgID = 1
     msgType = "str"
 ######################    From processTrafficSign  ###########################
-class SpeedMotorFromObjectDetection(enum):
+class SpeedMotorFromObjectDetection(Enum):
     Queue = "Critical"
     Owner = "threadTrafficsign"
     msgID = 1
