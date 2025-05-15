@@ -1,6 +1,6 @@
 
 from src.templates.workerprocess import WorkerProcess
-from src.hardware.lane_keeping.threads.threadLandKeeping import ThreadLandKeeping  # ??m b?o b?n ?ã có thread `ThreadLandKeeping`
+from src.lane_keeping.threads.threadLandKeeping import ThreadLandKeeping  # ??m b?o b?n ?ã có thread `ThreadLandKeeping`
 
 class processLandKeeping(WorkerProcess):
     """This process handles land keeping (lane detection and steering control)."""
