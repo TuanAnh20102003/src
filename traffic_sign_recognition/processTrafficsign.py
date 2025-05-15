@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
 from src.templates.workerprocess import WorkerProcess
 from src.traffic_sign_recognition.thread.threadTrafficsign import threadTrafficsign
-
+from multiprocessing import Pipe
 class processTrafficsign(WorkerProcess):
     def __init__(self, queueList, logger, debugging=False):
         self.logger = logger
