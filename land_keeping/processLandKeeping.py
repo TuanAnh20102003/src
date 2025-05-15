@@ -1,4 +1,6 @@
-
+if __name__ == "__main__":
+    import sys
+    sys.path.insert(0, "../../..")
 from src.templates.workerprocess import WorkerProcess
 from src.land_keeping.thread.threadLandKeeping import ThreadLandKeeping 
 
