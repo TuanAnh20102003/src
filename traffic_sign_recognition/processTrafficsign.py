@@ -17,10 +17,10 @@ class processTrafficsign(WorkerProcess):
         super(processTrafficsign, self).run()
 
     def _init_threads(self):
-        bienBaoThread = threadBienBao(
+        threadTrafficsign = threadTrafficsign(
             self.queuesList, self.logger, self.debugging
         )
-        self.threads.append(bienBaoThread)
+        self.threads.append(threadTrafficsign)
 
 
 # ======== Only runs when you call this script directly ========
