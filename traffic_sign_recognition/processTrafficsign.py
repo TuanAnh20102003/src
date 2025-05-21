@@ -5,16 +5,16 @@ if __name__ == "__main__":
     sys.path.insert(0, "../..")
 
 from src.templates.workerprocess import WorkerProcess
-from src.traffic_sign_recognition.thread.threadTrafficsign import threadTrafficsign
+from src.traffic_sign_recognition.thread.threadTrafficsign import threadTrafficSign
 from multiprocessing import Pipe
-class processTrafficsign(WorkerProcess):
+class processTrafficSign(WorkerProcess):
     def __init__(self, queueList, logger, debugging=False):
         self.logger = logger
         self.debugging = debugging
-        super(processTrafficsign, self).__init__(queueList)
+        super(processTrafficSign, self).__init__(queueList)
 
     def run(self):
-        super(processTrafficsign, self).run()
+        super(processTrafficSign, self).run()
 
     def _init_threads(self):
         threadTrafficsign = threadTrafficsign(
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     }
 
     logging = logging.getLogger()
-    process = processTrafficsign(queueList, logging, debugging=True)
+    process = processTrafficSign(queueList, logging, debugging=True)
     process.daemon = True
     process.start()
 
