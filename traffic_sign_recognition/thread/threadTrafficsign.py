@@ -14,7 +14,7 @@ from src.utils.messages.allMessages import (
 from src.utils.messages.messageHandlerSender import messageHandlerSender
 from src.utils.messages.messageHandlerSubscriber import messageHandlerSubscriber
 
-class threadTrafficsign(ThreadWithStop):
+class threadTrafficSign(ThreadWithStop):
     def __init__(self, queueList, logger, debugging=False):
         super(threadTrafficsign, self).__init__()
         self.logger = logger
